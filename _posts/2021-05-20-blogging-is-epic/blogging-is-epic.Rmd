@@ -17,6 +17,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ![swag](../../epic_selfie.jpg)
+
 My name is Poody and I have done some epic stuff. This is the place where you will see reports of such epic stuff.
 
 
