@@ -1,7 +1,7 @@
 ---
 title: "Blogging is epic"
 description: |
-  A short description of the post.
+  First epic post.
 author:
   - name: Poody
     url: https://example.com/norajones
@@ -16,8 +16,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+![swag](../../epic_selfie.jpg)
 My name is Poody and I have done some epic stuff. This is the place where you will see reports of such epic stuff.
-
-Learn more about using Distill at <https://rstudio.github.io/distill>.
 
 
