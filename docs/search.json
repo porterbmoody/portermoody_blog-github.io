@@ -3,17 +3,17 @@
     {
       "path": "about.html",
       "title": "About this blog",
-      "description": "Some additional details about the blog",
+      "description": "Poody is a member of the LDS church. He enjoys many things life has to offer, including praying, giving hugs, dancing, coding.",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-20T11:34:27-06:00"
+      "contents": "\r\nCheck out !(Porter Moody beats)[https://open.spotify.com/artist/5cPd79HlwskcQGkXXSpgQA?si=N6y8MJGlTzKqWmITgFWOcA]\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-05-20T11:38:49-06:00"
     },
     {
       "path": "index.html",
       "title": "Epic Poody Blog",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-20T11:34:28-06:00"
+      "last_modified": "2021-05-20T11:38:50-06:00"
     }
   ],
   "collections": ["posts/posts.json"]

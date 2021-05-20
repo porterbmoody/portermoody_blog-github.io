@@ -1,9 +1,11 @@
 ---
 title: "About this blog"
 description: |
-  Some additional details about the blog
+  Poody is a member of the LDS church. He enjoys many things life has to offer, including praying, giving hugs, dancing, coding.
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+Check out !(Porter Moody beats)[https://open.spotify.com/artist/5cPd79HlwskcQGkXXSpgQA?si=N6y8MJGlTzKqWmITgFWOcA]
