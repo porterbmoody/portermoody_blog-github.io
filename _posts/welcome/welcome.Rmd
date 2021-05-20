@@ -21,5 +21,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
+![swag](../../epic_selfie.jpg)
+
 Thanks for stopping by and checking out my blog!! I think it is a very epic blog. You will see some epic things here for sure.
 

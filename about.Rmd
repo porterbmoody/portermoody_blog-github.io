@@ -8,4 +8,5 @@ description: |
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Check out !(Porter Moody beats)[https://open.spotify.com/artist/5cPd79HlwskcQGkXXSpgQA?si=N6y8MJGlTzKqWmITgFWOcA]
+Check out 
+<a href="https://open.spotify.com/artist/5cPd79HlwskcQGkXXSpgQA?si=N6y8MJGlTzKqWmITgFWOcA" > Porter Moody Spotify Beats</a>

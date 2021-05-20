@@ -1,7 +1,7 @@
 ---
 title: "Blogging is epic"
 description: |
-  First epic post.
+  Who likes to dance?
 author:
   - name: Poody
     url: https://example.com/norajones
@@ -16,8 +16,8 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-![swag](../../epic_selfie.jpg)
+![swag](../../dance.jpg)
 
-My name is Poody and I have done some epic stuff. This is the place where you will see reports of such epic stuff.
+Who wants to just get up and dance to some good jams? I sure do.
 
 
