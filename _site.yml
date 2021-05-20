@@ -3,6 +3,7 @@ title: "Epic Poody Blog"
 description: |
   Epic Poody Blog
 output_dir: "docs"
+base_url: https://porterbmoody.github.io/portermoody_blog-github.io/
 navbar:
   right:
     - text: "Home"

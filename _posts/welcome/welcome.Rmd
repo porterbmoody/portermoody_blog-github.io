@@ -1,12 +1,11 @@
 ---
 title: "Welcome to Epic Poody Blog"
 description: |
-  Welcome to our new blog, Epic Poody Blog. We hope you enjoy 
-  reading what we have to say!
+  Welcome to our new Epic Poody Blog. Give it a read! 
 author:
-  - name: Nora Jones 
-    url: https://example.com/norajones
-    affiliation: Spacely Sprockets
+  - name: Poody
+    url: 
+    affiliation: Swag Coding
     affiliation_url: https://example.com/spacelysprokets
 date: 05-20-2021
 output:

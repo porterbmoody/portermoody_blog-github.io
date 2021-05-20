@@ -1,19 +1,36 @@
 [
   {
-    "path": "posts/welcome/",
-    "title": "Welcome to Epic Poody Blog",
-    "description": "Welcome to our new blog, Epic Poody Blog. We hope you enjoy \nreading what we have to say!",
+    "path": "posts/2021-05-20-blogging-is-epic/",
+    "title": "Blogging is epic",
+    "description": "A short description of the post.",
     "author": [
       {
-        "name": "Nora Jones",
+        "name": "Poody",
         "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-05-20",
+    "categories": [],
+    "contents": "\r\nMy name is Poody and I have done some epic stuff. This is the place where you will see reports of such epic stuff.\r\nLearn more about using Distill at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-05-20T11:05:31-06:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to Epic Poody Blog",
+    "description": "Welcome to our new Epic Poody Blog. Give it a read!",
+    "author": [
+      {
+        "name": "Poody",
+        "url": {}
       }
     ],
     "date": "2021-05-20",
     "categories": [],
     "contents": "\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2021-05-20T10:44:20-06:00",
+    "last_modified": "2021-05-20T11:06:09-06:00",
     "input_file": {}
   }
 ]
