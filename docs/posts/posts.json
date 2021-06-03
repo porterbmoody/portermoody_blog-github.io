@@ -21,7 +21,7 @@
   {
     "path": "posts/2021-05-26-scope-of-my-senior-project/",
     "title": "Scope of my senior Project",
-    "description": "A short description of the post.",
+    "description": "Search engine for CapGes",
     "author": [
       {
         "name": "Poody",
@@ -30,9 +30,9 @@
     ],
     "date": "2021-05-26",
     "categories": [],
-    "contents": "\r\nIntro\r\nI have worked on CapGes from September of 2020 until present. Here are some things I plan to do for my senior project: - Increase accuracy of pdf url finder amidst hundreds of lines of html code. - Create various data formatting functions. - Create many ‘truth data’ tables to assess where the parser is currently at.\r\nProposal\r\nClass shape the long/wide format\r\nwrite regex patterns to find certain urls. Write function to score accuracy of the urls\r\ncondense multiple NAV columns into 1 single column\r\n\r\n\r\n\r\n",
+    "contents": "\r\nIntro\r\nI have worked on CapGes from September of 2020 until present. An important part of this project is downloading the files that contain the data. I will work on a project that find these files, analyzes if they are the correct file, and downloads them.\r\nProposal\r\nCreate a ‘Search Engine’\r\nAutomate the process of downloading files from the web. It will do the following steps:\r\nOpen mutual fund company landing pages and search the html code for urls using keywords\r\nDownload pdf files, or images of the html, extract and interpret text to discern if the pages contain up to date capital gains estimate data\r\nCalculate the accuracy of the search engine\r\n\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2021-06-03T11:32:02-06:00",
+    "last_modified": "2021-06-03T14:21:06-06:00",
     "input_file": {}
   },
   {

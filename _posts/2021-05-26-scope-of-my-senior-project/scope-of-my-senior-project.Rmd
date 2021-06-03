@@ -1,7 +1,7 @@
 ---
 title: "Scope of my senior Project"
 description: |
-  A short description of the post.
+  Search engine for CapGes
 author:
   - name: Poody
     url: https://example.com/norajones
@@ -18,17 +18,17 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Intro
 
-I have worked on CapGes from September of 2020 until present. Here are some things I plan to do for my senior project:
-- Increase accuracy of pdf url finder amidst hundreds of lines of html code. 
-- Create various data formatting functions. 
-- Create many 'truth data' tables to assess where the parser is currently at. 
+I have worked on CapGes from September of 2020 until present. An important part of this project is downloading the files that contain the data. I will work on a project that find these files, analyzes if they are the correct file, and downloads them.
 
 
 # Proposal
 
-- Class shape the long/wide format
-- write regex patterns to find certain urls. Write function to score accuracy of the urls
-- condense multiple NAV columns into 1 single column
+## Create a 'Search Engine' 
+- Automate the process of downloading files from the web. It will do the following steps:
+
+  - Open mutual fund company landing pages and search the html code for urls using keywords
+  - Download pdf files, or images of the html, extract and interpret text to discern if the pages contain up to date capital gains estimate data
+  - Calculate the accuracy of the search engine
 
 
 
