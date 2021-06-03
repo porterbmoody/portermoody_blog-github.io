@@ -2,7 +2,7 @@
   {
     "path": "posts/2021-06-02-will-kristin-wait-for-me-analysis/",
     "title": "Will Kristin wait for me? - Analysis",
-    "description": "Careful analysis done by epic data scientists",
+    "description": "Careful analysis done by epic data scientist",
     "author": [
       {
         "name": "Poody",
@@ -13,7 +13,7 @@
     "categories": [],
     "contents": "\r\nPorter will soon be serving a mission and we must calculate the probability of Kristin Durrant waiting for him. please observe.\r\nEveryone please observe this telling graph. Kristin’s emotions are very constant and are likely to remain constant.\r\n\r\n\r\n\r\nWe can see this very compelling graph of the correlation between how long we see each other and how excited we are to see each other.\r\n\r\n\r\n \r\nEstimate\r\nStd. Error\r\nt value\r\n(Intercept)\r\n-4.73e-14\r\n1.673e-14\r\n-2.827\r\ndays_without_seeing_each_other 10 1.177e-15 8.496e+15\r\nTable continues below\r\n \r\nPr(>|t|)\r\n(Intercept)\r\n0.01646\r\ndays_without_seeing_each_other\r\n7.55e-171\r\nFitting linear model: excitement ~ days_without_seeing_each_other\r\nObservations\r\nResidual Std. Error\r\n\\(R^2\\)\r\nAdjusted \\(R^2\\)\r\n13\r\n5.052e-14\r\n1\r\n1\r\n\r\n\r\n\r\n\r\n",
     "preview": "posts/2021-06-02-will-kristin-wait-for-me-analysis/will-kristin-wait-for-me-analysis_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2021-06-02T18:20:55-06:00",
+    "last_modified": "2021-06-02T18:24:32-06:00",
     "input_file": {},
     "preview_width": 1248,
     "preview_height": 768
@@ -30,9 +30,9 @@
     ],
     "date": "2021-05-26",
     "categories": [],
-    "contents": "\r\nIntro\r\nI have worked on CapGes from September of 2020 until present. Here are some things I plan to do for my senior project: -\r\nProposal\r\nClass shape the long/wide format\r\n\r\n\r\n\r\n",
+    "contents": "\r\nIntro\r\nI have worked on CapGes from September of 2020 until present. Here are some things I plan to do for my senior project: - Increase accuracy of pdf url finder amidst hundreds of lines of html code. - Create various data formatting functions. - Create many ‘truth data’ tables to assess where the parser is currently at.\r\nProposal\r\nClass shape the long/wide format\r\nwrite regex patterns to find certain urls. Write function to score accuracy of the urls\r\ncondense multiple NAV columns into 1 single column\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2021-06-01T18:39:11-06:00",
+    "last_modified": "2021-06-03T11:32:02-06:00",
     "input_file": {}
   },
   {

@@ -27,6 +27,9 @@ I have worked on CapGes from September of 2020 until present. Here are some thin
 # Proposal
 
 - Class shape the long/wide format
+- write regex patterns to find certain urls. Write function to score accuracy of the urls
+- condense multiple NAV columns into 1 single column
+
 
 
 
