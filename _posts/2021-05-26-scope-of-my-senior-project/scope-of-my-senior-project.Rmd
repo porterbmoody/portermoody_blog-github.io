@@ -1,0 +1,52 @@
+---
+title: "Scope of my senior Project"
+description: |
+  A short description of the post.
+author:
+  - name: Poody
+    url: https://example.com/norajones
+date: 05-26-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Intro
+
+I have worked on CapGes from September of 2020 until present. Here are some things I plan to do for my senior project:
+- Increase accuracy of pdf url finder amidst hundreds of lines of html code. 
+- Create various data formatting functions. 
+- Create many 'truth data' tables to assess where the parser is currently at. 
+
+
+# Proposal
+
+- Class shape the long/wide format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

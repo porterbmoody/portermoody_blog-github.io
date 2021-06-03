@@ -1,0 +1,148 @@
+---
+title: "Will Kristin wait for me? - Analysis"
+description: |
+  Careful analysis done by epic data scientists
+author:
+  - name: Poody
+    url: https://example.com/norajones
+date: 06-02-2021
+output:
+  distill::distill_article:
+    self_contained: false
+editor_options: 
+  chunk_output_type: console
+---
+
+Porter will soon be serving a mission and we must calculate the probability of Kristin Durrant waiting for him. please observe.
+
+
+```{r setup, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(
+	echo = FALSE,
+	message = FALSE,
+	warning = FALSE
+)
+pacman::p_load(tidyverse, viridis)
+theme_set(theme_bw())
+
+dat = tribble(
+  ~x,~y,
+  "Probability you'll wait for me", 99,
+  "Probability you won't", 1
+)
+
+
+ggplot(dat) + aes(x,y) + geom_col(fill = c("blue", "pink"))+
+  scale_fill_viridis(discrete=T)+
+  labs(title="Important graph")
+
+```
+
+
+
+
+Everyone please observe this telling graph. Kristin's emotions are very constant and are likely to remain constant.
+
+```{r}
+f = function(x){2.71^(x-14)}
+
+days = seq(from = 1, to = 16)
+
+fondness1 = c(f(days))
+fondness2 = rep(7.344100, 16)
+
+epic = rep("Porter for Kristin", 16)
+
+epic2 = rep("Kristin for Porter", 16)
+# direction = c(epic, epic2)
+dat = data.frame(weeks = c(days,days),fondness = c(fondness1, fondness2)  ,direction = c(epic,epic2))
+
+
+# dat = tribble(
+#   ~days, ~fondness,~direction,
+#   1 , 0, "Porter for Kristin",
+#   2 , 1, "Porter for Kristin",
+#   3 , 2, "Porter for Kristin",
+#   4 , 3, "Porter for Kristin",
+#   5 , 4, "Porter for Kristin",
+#   6 , 5, "Porter for Kristin",
+#   7 , 6, "Porter for Kristin",
+#   8 , 7, "Porter for Kristin",
+#   9 , 8, "Porter for Kristin",
+#   10 , 9, "Porter for Kristin",
+#   11 , 10, "Porter for Kristin",
+#   12 , 11, "Porter for Kristin",
+#   13 , 12, "Porter for Kristin",
+#   14 , 13, "Porter for Kristin",
+#   15 , 14, "Porter for Kristin",
+#   16 , 15, "Porter for Kristin",
+#   17 , 16, "Porter for Kristin",
+#   18 , 17, "Porter for Kristin",
+#   19 , 17, "Porter for Kristin",
+#   1 , 100, "Kristin for Porter",
+#   2 , 100, "Kristin for Porter",
+#   3 , 100, "Kristin for Porter",
+#   4 , 100, "Kristin for Porter",
+#   5 , 100, "Kristin for Porter",
+#   6 , 100, "Kristin for Porter",
+#   7 , 100, "Kristin for Porter",
+#   8 , 100, "Kristin for Porter",
+#   9 , 100, "Kristin for Porter",
+#   10 , 100, "Kristin for Porter",
+#   11 , 100, "Kristin for Porter",
+#   12 , 100, "Kristin for Porter",
+#   13 , 100, "Kristin for Porter",
+#   14 , 100, "Kristin for Porter",
+#   15 , 100, "Kristin for Porter",
+#   16 , 100, "Kristin for Porter",
+#   17 , 100, "Kristin for Porter",
+#   18 , 100, "Kristin for Porter",
+#   19 , 100, "Kristin for Porter"
+# 
+# )
+dat = tibble(dat)
+
+ggplot(dat) + aes(weeks, fondness, color = direction) + geom_point() + 
+  stat_function(fun = function(x){f(x)})+
+  labs(title = "It appears the growth in fondness from Porter to Kristin is exponential.",subtitle = "Currently their fondness levels are equal, but porter's fondness will likely soon reach the skies.")+
+  geom_line()
+
+
+
+```
+
+We can see this very compelling graph of the correlation between how long we see each other and how excited we are to see each other.
+ 
+```{r}
+dat = tribble(
+  ~days_without_seeing_each_other,
+  40,
+  2,
+  3,
+  4,
+  5,
+  30,
+  7,
+  3,
+  1,
+  .5,
+  .5,
+  3,
+  2
+) %>% mutate(excitement = days_without_seeing_each_other*10)
+
+dat %>% ggplot() + aes(days_without_seeing_each_other,excitement) + 
+  labs(title = "Correlation between how long Porter and Kristin go without seeing each other and their excitement to see each other",
+       subtitle = "R^2 = .99")+
+  geom_point(fill = "blue")+
+  geom_smooth()
+pacman::p_load(pander)
+
+lm(excitement ~ days_without_seeing_each_other  , data= dat) %>% summary() %>% pander()
+
+```
+
+
+
+
+

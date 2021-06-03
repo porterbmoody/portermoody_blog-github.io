@@ -7,13 +7,38 @@
     <description>Epic Poody Blog
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 20 May 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Will Kristin wait for me? - Analysis</title>
+      <dc:creator>Poody</dc:creator>
+      <link>https://porterbmoody.github.io/portermoody_blog-github.io/posts/2021-06-02-will-kristin-wait-for-me-analysis</link>
+      <description>Careful analysis done by epic data scientists</description>
+      <guid>https://porterbmoody.github.io/portermoody_blog-github.io/posts/2021-06-02-will-kristin-wait-for-me-analysis</guid>
+      <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://porterbmoody.github.io/portermoody_blog-github.io/posts/2021-06-02-will-kristin-wait-for-me-analysis/will-kristin-wait-for-me-analysis_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>Scope of my senior Project</title>
+      <dc:creator>Poody</dc:creator>
+      <link>https://porterbmoody.github.io/portermoody_blog-github.io/posts/2021-05-26-scope-of-my-senior-project</link>
+      <description>A short description of the post.</description>
+      <guid>https://porterbmoody.github.io/portermoody_blog-github.io/posts/2021-05-26-scope-of-my-senior-project</guid>
+      <pubDate>Wed, 26 May 2021 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Blogging is epic</title>
       <dc:creator>Poody</dc:creator>
       <link>https://porterbmoody.github.io/portermoody_blog-github.io/posts/2021-05-20-blogging-is-epic</link>
       <description>Who likes to dance?</description>
       <guid>https://porterbmoody.github.io/portermoody_blog-github.io/posts/2021-05-20-blogging-is-epic</guid>
+      <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Epic coding Project I've been working on</title>
+      <dc:creator>Poody</dc:creator>
+      <link>https://porterbmoody.github.io/portermoody_blog-github.io/posts/2021-05-20-epic-coding-project-ive-been-working-on</link>
+      <description>Anyone like coding machine learning algorithms in python?</description>
+      <guid>https://porterbmoody.github.io/portermoody_blog-github.io/posts/2021-05-20-epic-coding-project-ive-been-working-on</guid>
       <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
     </item>
     <item>

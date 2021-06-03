@@ -21,3 +21,10 @@ knitr::opts_chunk$set(echo = FALSE)
 Who wants to just get up and dance to some good jams? I sure do.
 
 
+
+![pdf](../../../amundipioneer.pdf)
+
+
+
+
+
