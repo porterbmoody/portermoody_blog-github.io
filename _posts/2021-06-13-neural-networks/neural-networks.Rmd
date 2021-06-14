@@ -1,7 +1,7 @@
 ---
 title: "Neural Networks"
 description: |
-  A short description of the post.
+  An undergraduate explanation of Neural Networks.
 author:
   - name: Poody
     url: https://example.com/norajones
@@ -112,4 +112,19 @@ $$
 w_i^j = w_i^j - (\alpha * \frac{\partial{C}}{\partial{w_i^j}})
 $$
 
-A parial derivative of the Loss function must computed with respect to each weight. This means more weights amount to a much heavier computational footprint.
+A partial derivative of the Loss function must computed with respect to each weight. This means more weights amount to a much heavier computational footprint.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
