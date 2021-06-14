@@ -7,7 +7,15 @@
     <description>Epic Poody Blog
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 02 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Neural Networks</title>
+      <dc:creator>Poody</dc:creator>
+      <link>https://porterbmoody.github.io/portermoody_blog-github.io/posts/2021-06-13-neural-networks</link>
+      <description>A short description of the post.</description>
+      <guid>https://porterbmoody.github.io/portermoody_blog-github.io/posts/2021-06-13-neural-networks</guid>
+      <pubDate>Sun, 13 Jun 2021 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Will Kristin wait for me? - Analysis</title>
       <dc:creator>Poody</dc:creator>

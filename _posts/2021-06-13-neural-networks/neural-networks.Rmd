@@ -1,0 +1,115 @@
+---
+title: "Neural Networks"
+description: |
+  A short description of the post.
+author:
+  - name: Poody
+    url: https://example.com/norajones
+date: 06-13-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+
+
+
+
+# The process behind Neural Networks
+
+Math is pure and beautiful. Let's find a way to apply it to a chaotic world.
+
+
+A neural network consists of 3 main componentss
+
+1. An Input layer
+2. A number of hidden layers
+3. An output layer
+
+We construct an algorithm using these components with $propogation$ and $back propogation$ that lets the computer $learn$. From a mathematical view a neural network is a process of performing many matrix vector products between inputs and weights where each weight is slightly adjusted between each product.
+
+## Setup of Activation Function
+
+We start by aquiring a set of $inputs$ which can be represented as a vector. 
+
+$$
+x = \begin{bmatrix}
+x_1 \\
+x_2 \\
+x_3 \\
+\vdots \\
+x_n
+\end{bmatrix}
+$$
+
+Let a transformation $T: R^n \rightarrow R^m $ be a linear transformation represented by the $m$ x $n$ matrix $W$. 
+
+$$
+W = \begin{bmatrix}
+w_1^1 & w_2^1 & w_3^1 & ... & w_n^1\\
+w_1^2 & w_2^2 & w_3^2 & ... & w_n^2\\
+\vdots & \vdots & \vdots & \vdots & \vdots \\
+w_1^m & w_2^m & w_3^m & ... & w_n^m
+\end{bmatrix}
+$$
+
+Where each element of the matrix is a $weight$. The result of the transformation $T(x)$ is nearly the domain of the activation function. It is not the domain because it is biased since it is a sample.
+
+$$
+T(x) = Wx = \begin{bmatrix}
+w_1^1x_1 + w_2^1x_2 + ... + w_n^1x_n \\
+w_1^2x_1 + w_2^2x_2 + ... + w_n^2x_n \\
+\vdots\\
+w_1^mx_1 + w_2^mx_1 + ... + w_n^mx_n
+\end{bmatrix} 
+= \begin{bmatrix}
+h_1\\
+h_2\\
+h_3\\
+\vdots\\
+h_m
+\end{bmatrix}
+$$
+
+Where a given weight $w_i^j$ is represented with indices $i,j$. This is precisely the vector we need for the $activation$  $function$ $\hat{y}$.
+
+$$
+H = \hat{y}(\begin{bmatrix}
+h_1\\
+h_2\\
+h_3\\
+\vdots\\
+h_m
+\end{bmatrix} + b)
+$$
+
+Where $b$ is some measure of the bias. $b$ can be conceptualized as a horizontal shift in the activation function. There are many viable activation functions. We will consider the Rectified Linear Unit Activation function because of its low computational footprint.
+
+$$
+R(z) = max(0, z)
+$$
+The result of this activation function  
+
+## Learning Algorithm
+
+Step 1: to know how far away from our desired solution, a loss function is used. We will use $mean squared error$. For a given input:
+
+$$
+MSE_i = (y_i - \hat{y_i})^2
+$$
+
+The Loss function is calculated for the entire training dataset. 
+
+$$
+C(w_i^j) = MSE = \frac{1}{n}\sum_{i=1}^{n}{(y_i - \hat{y_i})^2}
+$$
+
+C is a function of a given weight $w_i$ what we expect to optimize. 
+
+
+$$
+w_i^j = w_i^j - (\alpha * \frac{\partial{C}}{\partial{w_i^j}})
+$$
+
+A parial derivative of the Loss function must computed with respect to each weight. This means more weights amount to a much heavier computational footprint.
