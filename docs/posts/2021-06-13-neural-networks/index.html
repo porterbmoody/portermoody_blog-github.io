@@ -2180,6 +2180,70 @@ C(w_i^j) = MSE = \frac{1}{n}\sum_{i=1}^{n}{(y_i - \hat{y_i})^2}
 w_i^j = w_i^j - (\alpha * \frac{\partial{C}}{\partial{w_i^j}})
 \]</span></p>
 <p>A partial derivative of the Loss function must computed with respect to each weight. This means more weights amount to a much heavier computational footprint.</p>
+<h2 id="example">Example</h2>
+<p>We will use the following dataset to simulate the process.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">x1</th>
+<th style="text-align: right;">x2</th>
+<th style="text-align: right;">y</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<p>We will take the first row as our input layer</p>
+<p><span class="math display">\[
+x =  \begin{bmatrix}
+x_1 \\
+x_2 \\
+x_3
+\end{bmatrix} =
+\begin{bmatrix}
+1 &amp; 4 &amp; 1 
+\end{bmatrix}^T
+\]</span></p>
+<p>and a vector of random weights</p>
+<p><span class="math display">\[
+W =  \begin{bmatrix}
+w_1 &amp; w_2 &amp; w_3
+\end{bmatrix} = \begin{bmatrix}
+1 &amp; 3 &amp; 2
+\end{bmatrix}
+\]</span></p>
+<p>as the input to the activation function. We will choose a bias of 0 to start.</p>
+<p><span class="math display">\[
+H = \hat{y}(Wx + b) = \hat{y}(\begin{bmatrix}
+1 &amp; 3 &amp; 2
+\end{bmatrix}\begin{bmatrix}
+1 \\
+4 \\
+1
+\end{bmatrix} +0) = \hat{y}(1+12+2)\\=\hat{y}(15)\\= 15 
+\]</span></p>
+<p>According to the Rectified Linear Unit Function.</p>
+<p><span class="math display">\[ 
+\begin{cases} 
+      x &amp; x &gt; 0 \\
+      0 &amp; x\leq 0 
+   \end{cases}
+\]</span></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

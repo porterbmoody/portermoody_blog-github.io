@@ -11,9 +11,9 @@
     ],
     "date": "2021-06-13",
     "categories": [],
-    "contents": "\r\nThe process behind Neural Networks\r\nMath is pure and beautiful. Let’s find a way to apply it to a chaotic world.\r\nA neural network consists of 3 main componentss\r\nAn Input layer\r\nA number of hidden layers\r\nAn output layer\r\nWe construct an algorithm using these components with \\(propogation\\) and \\(back propogation\\) that lets the computer \\(learn\\). From a mathematical view a neural network is a process of performing many matrix vector products between inputs and weights where each weight is slightly adjusted between each product.\r\nSetup of Activation Function\r\nWe start by aquiring a set of \\(inputs\\) which can be represented as a vector.\r\n\\[\r\nx = \\begin{bmatrix}\r\nx_1 \\\\\r\nx_2 \\\\\r\nx_3 \\\\\r\n\\vdots \\\\\r\nx_n\r\n\\end{bmatrix}\r\n\\]\r\nLet a transformation $T: R^n R^m $ be a linear transformation represented by the \\(m\\) x \\(n\\) matrix \\(W\\).\r\n\\[\r\nW = \\begin{bmatrix}\r\nw_1^1 & w_2^1 & w_3^1 & ... & w_n^1\\\\\r\nw_1^2 & w_2^2 & w_3^2 & ... & w_n^2\\\\\r\n\\vdots & \\vdots & \\vdots & \\vdots & \\vdots \\\\\r\nw_1^m & w_2^m & w_3^m & ... & w_n^m\r\n\\end{bmatrix}\r\n\\]\r\nWhere each element of the matrix is a \\(weight\\). The result of the transformation \\(T(x)\\) is nearly the domain of the activation function. It is not the domain because it is biased since it is a sample.\r\n\\[\r\nT(x) = Wx = \\begin{bmatrix}\r\nw_1^1x_1 + w_2^1x_2 + ... + w_n^1x_n \\\\\r\nw_1^2x_1 + w_2^2x_2 + ... + w_n^2x_n \\\\\r\n\\vdots\\\\\r\nw_1^mx_1 + w_2^mx_1 + ... + w_n^mx_n\r\n\\end{bmatrix} \r\n= \\begin{bmatrix}\r\nh_1\\\\\r\nh_2\\\\\r\nh_3\\\\\r\n\\vdots\\\\\r\nh_m\r\n\\end{bmatrix}\r\n\\]\r\nWhere a given weight \\(w_i^j\\) is represented with indices \\(i,j\\). This is precisely the vector we need for the \\(activation\\) \\(function\\) \\(\\hat{y}\\).\r\n\\[\r\nH = \\hat{y}(\\begin{bmatrix}\r\nh_1\\\\\r\nh_2\\\\\r\nh_3\\\\\r\n\\vdots\\\\\r\nh_m\r\n\\end{bmatrix} + b)\r\n\\]\r\nWhere \\(b\\) is some measure of the bias. \\(b\\) can be conceptualized as a horizontal shift in the activation function. There are many viable activation functions. We will consider the Rectified Linear Unit Activation function because of its low computational footprint.\r\n\\[\r\nR(z) = max(0, z)\r\n\\] The result of this activation function\r\nLearning Algorithm\r\nStep 1: to know how far away from our desired solution, a loss function is used. We will use \\(mean squared error\\). For a given input:\r\n\\[\r\nMSE_i = (y_i - \\hat{y_i})^2\r\n\\]\r\nThe Loss function is calculated for the entire training dataset.\r\n\\[\r\nC(w_i^j) = MSE = \\frac{1}{n}\\sum_{i=1}^{n}{(y_i - \\hat{y_i})^2}\r\n\\]\r\nC is a function of a given weight \\(w_i\\) what we expect to optimize.\r\n\\[\r\nw_i^j = w_i^j - (\\alpha * \\frac{\\partial{C}}{\\partial{w_i^j}})\r\n\\]\r\nA partial derivative of the Loss function must computed with respect to each weight. This means more weights amount to a much heavier computational footprint.\r\n\r\n\r\n\r\n",
+    "contents": "\r\nThe process behind Neural Networks\r\nMath is pure and beautiful. Let’s find a way to apply it to a chaotic world.\r\nA neural network consists of 3 main componentss\r\nAn Input layer\r\nA number of hidden layers\r\nAn output layer\r\nWe construct an algorithm using these components with \\(propogation\\) and \\(back propogation\\) that lets the computer \\(learn\\). From a mathematical view a neural network is a process of performing many matrix vector products between inputs and weights where each weight is slightly adjusted between each product.\r\nSetup of Activation Function\r\nWe start by aquiring a set of \\(inputs\\) which can be represented as a vector.\r\n\\[\r\nx = \\begin{bmatrix}\r\nx_1 \\\\\r\nx_2 \\\\\r\nx_3 \\\\\r\n\\vdots \\\\\r\nx_n\r\n\\end{bmatrix}\r\n\\]\r\nLet a transformation $T: R^n R^m $ be a linear transformation represented by the \\(m\\) x \\(n\\) matrix \\(W\\).\r\n\\[\r\nW = \\begin{bmatrix}\r\nw_1^1 & w_2^1 & w_3^1 & ... & w_n^1\\\\\r\nw_1^2 & w_2^2 & w_3^2 & ... & w_n^2\\\\\r\n\\vdots & \\vdots & \\vdots & \\vdots & \\vdots \\\\\r\nw_1^m & w_2^m & w_3^m & ... & w_n^m\r\n\\end{bmatrix}\r\n\\]\r\nWhere each element of the matrix is a \\(weight\\). The result of the transformation \\(T(x)\\) is nearly the domain of the activation function. It is not the domain because it is biased since it is a sample.\r\n\\[\r\nT(x) = Wx = \\begin{bmatrix}\r\nw_1^1x_1 + w_2^1x_2 + ... + w_n^1x_n \\\\\r\nw_1^2x_1 + w_2^2x_2 + ... + w_n^2x_n \\\\\r\n\\vdots\\\\\r\nw_1^mx_1 + w_2^mx_1 + ... + w_n^mx_n\r\n\\end{bmatrix} \r\n= \\begin{bmatrix}\r\nh_1\\\\\r\nh_2\\\\\r\nh_3\\\\\r\n\\vdots\\\\\r\nh_m\r\n\\end{bmatrix}\r\n\\]\r\nWhere a given weight \\(w_i^j\\) is represented with indices \\(i,j\\). This is precisely the vector we need for the \\(activation\\) \\(function\\) \\(\\hat{y}\\).\r\n\\[\r\nH = \\hat{y}(\\begin{bmatrix}\r\nh_1\\\\\r\nh_2\\\\\r\nh_3\\\\\r\n\\vdots\\\\\r\nh_m\r\n\\end{bmatrix} + b)\r\n\\]\r\nWhere \\(b\\) is some measure of the bias. \\(b\\) can be conceptualized as a horizontal shift in the activation function. There are many viable activation functions. We will consider the Rectified Linear Unit Activation function because of its low computational footprint.\r\n\\[\r\nR(z) = max(0, z)\r\n\\] The result of this activation function\r\nLearning Algorithm\r\nStep 1: to know how far away from our desired solution, a loss function is used. We will use \\(mean squared error\\). For a given input:\r\n\\[\r\nMSE_i = (y_i - \\hat{y_i})^2\r\n\\]\r\nThe Loss function is calculated for the entire training dataset.\r\n\\[\r\nC(w_i^j) = MSE = \\frac{1}{n}\\sum_{i=1}^{n}{(y_i - \\hat{y_i})^2}\r\n\\]\r\nC is a function of a given weight \\(w_i\\) what we expect to optimize.\r\n\\[\r\nw_i^j = w_i^j - (\\alpha * \\frac{\\partial{C}}{\\partial{w_i^j}})\r\n\\]\r\nA partial derivative of the Loss function must computed with respect to each weight. This means more weights amount to a much heavier computational footprint.\r\nExample\r\nWe will use the following dataset to simulate the process.\r\nx1\r\nx2\r\ny\r\n1\r\n4\r\n1\r\n2\r\n5\r\n0\r\n3\r\n6\r\n1\r\nWe will take the first row as our input layer\r\n\\[\r\nx =  \\begin{bmatrix}\r\nx_1 \\\\\r\nx_2 \\\\\r\nx_3\r\n\\end{bmatrix} =\r\n\\begin{bmatrix}\r\n1 & 4 & 1 \r\n\\end{bmatrix}^T\r\n\\]\r\nand a vector of random weights\r\n\\[\r\nW =  \\begin{bmatrix}\r\nw_1 & w_2 & w_3\r\n\\end{bmatrix} = \\begin{bmatrix}\r\n1 & 3 & 2\r\n\\end{bmatrix}\r\n\\]\r\nas the input to the activation function. We will choose a bias of 0 to start.\r\n\\[\r\nH = \\hat{y}(Wx + b) = \\hat{y}(\\begin{bmatrix}\r\n1 & 3 & 2\r\n\\end{bmatrix}\\begin{bmatrix}\r\n1 \\\\\r\n4 \\\\\r\n1\r\n\\end{bmatrix} +0) = \\hat{y}(1+12+2)\\\\=\\hat{y}(15)\\\\= 15 \r\n\\]\r\nAccording to the Rectified Linear Unit Function.\r\n\\[ \r\n\\begin{cases} \r\n      x & x > 0 \\\\\r\n      0 & x\\leq 0 \r\n   \\end{cases}\r\n\\]\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2021-06-13T22:09:28-06:00",
+    "last_modified": "2021-06-13T23:33:04-06:00",
     "input_file": {}
   },
   {
@@ -41,7 +41,7 @@
     "description": "Search engine for CapGes",
     "author": [
       {
-        "name": "Poody",
+        "name": "Porter Moody",
         "url": "https://example.com/norajones"
       }
     ],
@@ -49,7 +49,7 @@
     "categories": [],
     "contents": "\r\nIntro\r\nI have worked on CapGes from September of 2020 until present. An important part of this project is downloading the files that contain the data. I will work on a project that find these files, analyzes if they are the correct file, and downloads them.\r\nProposal\r\nCreate a ‘Search Engine’\r\nAutomate the process of downloading files from the web. It will do the following steps:\r\nOpen mutual fund company landing pages and search the html code for urls using keywords\r\nDownload pdf files, or images of the html, extract and interpret text to discern if the pages contain up to date capital gains estimate data\r\nCalculate the accuracy of the search engine\r\n\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2021-06-03T14:21:06-06:00",
+    "last_modified": "2021-06-13T22:17:39-06:00",
     "input_file": {}
   },
   {
@@ -75,7 +75,7 @@
     "description": "Anyone like coding machine learning algorithms in python?",
     "author": [
       {
-        "name": "Poody",
+        "name": "Porter Moody",
         "url": "https://example.com/norajones"
       }
     ],
@@ -83,7 +83,7 @@
     "categories": [],
     "contents": "\r\nPython is a neat tool for creating machine learning algorithms. Pandas is a helpful package when doing anything data science in python. Lately I’ve been hustling to get this project up at running at a decent accuracy. What is this project? It a big web data acquisition and formatting project. We’re creating an algorithm to scrape the web for files, extract tables from them and store them into a database.\r\nIt’s for a pdf like this:\r\npdf\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2021-05-20T12:27:25-06:00",
+    "last_modified": "2021-06-13T22:17:27-06:00",
     "input_file": {}
   },
   {
