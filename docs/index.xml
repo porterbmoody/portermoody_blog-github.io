@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
   <channel>
-    <title>Epic Poody Blog</title>
+    <title>Epic Porter Moody Blog</title>
     <link>https://porterbmoody.github.io/portermoody_blog-github.io/</link>
     <atom:link href="https://porterbmoody.github.io/portermoody_blog-github.io/index.xml" rel="self" type="application/rss+xml"/>
-    <description>Epic Poody Blog
+    <description>Epic Porter Moody Blog
 </description>
     <generator>Distill</generator>
     <lastBuildDate>Sun, 13 Jun 2021 00:00:00 +0000</lastBuildDate>
@@ -50,10 +50,10 @@
       <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Welcome to Epic Poody Blog</title>
-      <dc:creator>Poody</dc:creator>
+      <title>Welcome to Epic Porter Moody Blog</title>
+      <dc:creator>Porter Moody</dc:creator>
       <link>https://porterbmoody.github.io/portermoody_blog-github.io/posts/welcome</link>
-      <description>Welcome to our new Epic Poody Blog. Give it a read!</description>
+      <description>Welcome to our new Epic Porter Moody Blog. Give it a read!</description>
       <guid>https://porterbmoody.github.io/portermoody_blog-github.io/posts/welcome</guid>
       <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
     </item>

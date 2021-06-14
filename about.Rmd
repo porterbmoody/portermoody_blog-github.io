@@ -1,7 +1,7 @@
 ---
 title: "About this blog"
 description: |
-  Poody is a member of the LDS church. He enjoys many things life has to offer, including praying, giving hugs, dancing, coding.
+  Porter Moody is a member of the LDS church. He enjoys many things life has to offer, including praying, giving hugs, dancing, coding.
 ---
 
 ```{r setup, include=FALSE}

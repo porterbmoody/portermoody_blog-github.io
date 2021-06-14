@@ -3,7 +3,7 @@ title: "Will Kristin wait for me? - Analysis"
 description: |
   Careful analysis done by epic data scientist
 author:
-  - name: Poody
+  - name: Porter Moody
     url: https://example.com/norajones
 date: 06-02-2021
 output:

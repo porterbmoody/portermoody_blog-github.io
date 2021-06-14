@@ -1,9 +1,9 @@
 ---
-title: "Welcome to Epic Poody Blog"
+title: "Welcome to Epic Porter Moody Blog"
 description: |
-  Welcome to our new Epic Poody Blog. Give it a read! 
+  Welcome to our new Epic Porter Moody Blog. Give it a read! 
 author:
-  - name: Poody
+  - name: Porter Moody
     url: 
     affiliation: Swag Coding
     affiliation_url: https://example.com/spacelysprokets

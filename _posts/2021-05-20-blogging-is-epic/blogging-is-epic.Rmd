@@ -3,7 +3,7 @@ title: "Blogging is epic"
 description: |
   Who likes to dance?
 author:
-  - name: Poody
+  - name: Porter Moody
     url: https://example.com/norajones
 date: 05-20-2021
 output:

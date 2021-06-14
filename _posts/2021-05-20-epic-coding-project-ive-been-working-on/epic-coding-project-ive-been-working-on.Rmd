@@ -3,7 +3,7 @@ title: "Epic coding Project I've been working on"
 description: |
   Anyone like coding machine learning algorithms in python?
 author:
-  - name: Poody
+  - name: Porter Moody
     url: https://example.com/norajones
 date: 05-20-2021
 output:

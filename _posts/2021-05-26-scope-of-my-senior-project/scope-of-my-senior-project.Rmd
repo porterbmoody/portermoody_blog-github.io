@@ -3,7 +3,7 @@ title: "Scope of my senior Project"
 description: |
   Search engine for CapGes
 author:
-  - name: Poody
+  - name: Porter Moody
     url: https://example.com/norajones
 date: 05-26-2021
 output:

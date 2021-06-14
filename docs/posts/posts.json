@@ -88,11 +88,11 @@
   },
   {
     "path": "posts/welcome/",
-    "title": "Welcome to Epic Poody Blog",
-    "description": "Welcome to our new Epic Poody Blog. Give it a read!",
+    "title": "Welcome to Epic Porter Moody Blog",
+    "description": "Welcome to our new Epic Porter Moody Blog. Give it a read!",
     "author": [
       {
-        "name": "Poody",
+        "name": "Porter Moody",
         "url": {}
       }
     ],
@@ -100,7 +100,7 @@
     "categories": [],
     "contents": "\r\nswag picThanks for stopping by and checking out my blog!! I think it is a very epic blog. You will see some epic things here for sure.\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2021-05-20T11:57:13-06:00",
+    "last_modified": "2021-06-13T22:12:30-06:00",
     "input_file": {}
   }
 ]

@@ -1,7 +1,7 @@
 name: "portermoody_blog-github.io"
-title: "Epic Poody Blog"
+title: "Epic Porter Moody Blog"
 description: |
-  Epic Poody Blog
+  Epic Porter Moody Blog
 output_dir: "docs"
 base_url: https://porterbmoody.github.io/portermoody_blog-github.io/
 navbar:

@@ -1,5 +1,5 @@
 ---
-title: "Epic Poody Blog"
+title: "Epic Porter Moody Blog"
 site: distill::distill_website
 listing: posts
 ---
